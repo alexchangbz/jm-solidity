@@ -18,9 +18,6 @@ const getNumber = async () => {
 
 function Services() {
     const [myNumber, setMyNumber] = useState()
-    
-    setMyNumber(5)
-    console.log(myNumber)
 
     return (
         <div>
