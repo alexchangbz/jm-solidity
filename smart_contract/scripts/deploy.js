@@ -1,3 +1,5 @@
+const hre = require("hardhat");
+
 const main = async () => {
 
   const Transactions = await hre.ethers.getContractFactory("Transactions");
@@ -10,15 +12,12 @@ const main = async () => {
 
 const runMain = async () => {
   try {
-    await main();
-    process.exit(0);
+    await main()
+    process.exit(0)
   } catch (error) {
-    console.error(error);
-    process.exit(1);
+    console.log(error)
+    process.exit(1)
   }
 }
 
-runMain();
-
-// use this in the terminal
-// npx hardhat run scripts/deploy.js --network ropsten
+runMain()
